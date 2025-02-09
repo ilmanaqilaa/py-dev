@@ -16,7 +16,6 @@ Coba perhatikan goa di bawah ini!!!
 """)
 
 while True:
-    # Validasi input pilihan goa
     try:
         pilihan_user = int(input("Menurutmu di goa berapa posisi marmut berada? [1 / 2 / 3 / 4]: "))
         if pilihan_user not in [1, 2, 3, 4]:
@@ -26,7 +25,6 @@ while True:
         print("Harap masukkan angka yang valid!")
         continue
 
-    # Validasi konfirmasi
     while True:
         konfirmasi = input("Apakah kamu yakin dengan nomor pilihanmu? [Y / N]: ").strip().upper()
         if konfirmasi in ["Y", "N"]:
@@ -43,16 +41,4 @@ while True:
         break
     else:
         input(f"KAMU SALAH!!! POSISI MARMUT BERADA DI {marmut_position}. Ayo coba lagi!")
-
-
-
-
-
-# umur_ilman = int(input("Tebak umur Ilman: "))
-
-# if umur_ilman == 23:
-#     print("Betul! Umur Ilman adalah 23")
-# else:
-#     print("Salah, coba lagi!")
-    
     
