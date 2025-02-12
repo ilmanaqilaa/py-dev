@@ -29,7 +29,7 @@ def start_cuypy():
             print(goa)
             print(f"Kamu salah!!! Posisi marmut bukan berada di goa {pilihan_user}, tapi berada di goa {marmut_position}\n")
             
-        play_again = input("Apakah kamu ingin melanjutkan gamenya? [y / n]\n")
+        play_again = input("Apakah kamu ingin melanjutkan gamenya? [y / n]: ")
         if play_again == "n":
             break
 
