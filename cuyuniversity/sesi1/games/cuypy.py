@@ -1,4 +1,6 @@
 import random
+import main
+
 
 def start_cuypy():
     while True:
@@ -31,6 +33,11 @@ def start_cuypy():
             
         play_again = input("Apakah kamu ingin melanjutkan gamenya? [y / n]: ")
         if play_again == "n":
+            main.main()
+        elif play_again == "y":
+            continue
+        else:
+            print("Kamu memasukan input yang tidak valid!!!")
             break
 
 if __name__ == '__main__':
