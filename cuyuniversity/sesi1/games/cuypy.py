@@ -1,9 +1,4 @@
 import random
-from libs import welcome_message
-
-welcome_message("Wellcome to Minigame")
-
-print()
 
 while True:
 
@@ -38,4 +33,3 @@ while True:
         break
 
 print("\n\n Program Selesai")
-        
