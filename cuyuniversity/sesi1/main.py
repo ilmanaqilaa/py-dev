@@ -1,5 +1,10 @@
-from libs import welcome_message
-# from games import cuypy
+from libs import welcome_message, exit_program
+from games import cuypy
 
-welcome_message("Wellcome to Minigame")
+def main():
+    welcome_message()
+    cuypy.start_cuypy()
+    exit_program()
 
+if __name__ == '__main__':
+    main()
