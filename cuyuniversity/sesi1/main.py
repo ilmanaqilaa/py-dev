@@ -1,4 +1,4 @@
-from libs import welcome_message, exit_program
+from library.libs import welcome_message, exit_program
 from games import cuypy
 from tools import warung_mini
 
