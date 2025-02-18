@@ -10,7 +10,17 @@ def add_barang():
     db.insert_item(kode_barang, nama_barang, harga_barang, stok_barang)
     
 def check_barang():
-    pass
+    items = db.fetch_item()
+    for item in items:
+        kode_barang = item[1]
+        nama_barang = item[2]
+        harga_barang = item[3]
+        stok_barang = item[4]
+        print(f'''
+Kode Barang: {kode_barang}
+Nama Barang: {nama_barang} | Rp. {harga_barang}
+Stok Barang: {stok_barang}
+              ''')
 
 def start_warung():
     while True:
