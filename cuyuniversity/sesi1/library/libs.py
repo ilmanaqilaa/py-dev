@@ -18,4 +18,4 @@ def exit_program():
     sleep(1)
     print("1...")
     sleep(1)
-    print("Program dihentikan")
+    exit()
